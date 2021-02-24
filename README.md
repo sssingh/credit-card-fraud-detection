@@ -2,7 +2,7 @@
 
 ![](images/main-project-image.jpg)
 
-> Credit card fraud detection using machine learning techniques.
+> ### Credit card fraud detection using machine learning techniques.
 
 ---
 
@@ -10,9 +10,9 @@
 
 - [Introduction](#introduction) 
 - [Objective](#objective)
+- [Dataset](#dataset)
 - [Solution Approach](#solution-approach)
 - [How To Use](#how-to-use)
-- [References](#references)
 - [License](#license)
 - [Author Info](#author-info)
 
@@ -28,14 +28,23 @@ information.
 - Credit card information can be stolen using card skimmer installed at ATMs
 
 Card fraud is a big problem for card issuers and banks as it account for substantial chunk of revenue loss. As per a report, fraud
-losses reached upto USD 27.8 billion in 2019 and expect to go upto USD 35.67 billion in next 5 years. 
+losses reached up to USD 27.8 billion in 2019 and expect to go up to USD 35.67 billion in next 5 years. 
 
 ---
-
 ## Objective
 In order to implement proactive monitoring, prevention mechanisms and reduce time consuming manual reviews and human errors this project aims to build and train a machine learning model to predict fraudulent credit card transaction.
 
 ---
+## Dataset
+- Dataset contains credit card transactions done by European card holders in 2013 over a period of 2 days
+- There are 284,807 total transactions
+- 492 transactions are fraudulent 
+- The positive class (frauds) are only 0.172%
+- Dataset has 31 features, 30 independent and 1 dependent column.
+- Due to confidentiality reasons 28 features out of 30 independent features are transformed to numerical values using `PCA`. The remaining two features `time` and `amount` are left intact.  
+- Fraudulent transactions are marked as 1 (Positive class) and genuine transactions are marked as 0 (negative class)
+---
+
 ## Solution Approach
 - We start with Exploratory Data Analysis to get in-depth data understanding, how predictors are affecting/not affecting the target variable and if given predictor are useful to us for model building.
 - We then move to Data preparation where we try to remove skewness from data, split the data in test and train splits and apply standardization required.
@@ -50,7 +59,7 @@ the `precision` and `recall` metrics for each of the models we build as they can
     - If reducing the false-alarm' is the primary concern then
     `precision` could be the go to metric.
 - For this exercise we have taken the view that amount lost in fraudulent transactions is very high hence we’d like to catch as many of them as possible. Hence we use `recall` in addition to `roc-auc` as our primary performance metrics.
-- We want our model prediction to be as interpretable as possible. This is one of the criterias for selecting the final
+- We want our model prediction to be as interpretable as possible. This is one of the criteria's for selecting the final
 model. Although we check the top most important features of the model, however due to PCA transformed features it’s hard to get any deeper insight on the important features.
 - We then generate balanced dataset using `RANDOM`, `SMOTE` & `ADASYSN` oversampling techniques.
 - All models built using imbalanced dataset are now fitted on to balanced dataset generated using above techniques.
@@ -62,11 +71,42 @@ arrive at the final-model for our project.
 ---
 
 ## How To Use
+1. Ensure below listed packages are installed [TODO]
+    - `sklearn v1.0`
+    - `numpy`
+    - `pandas`
+    - `xgboost`
+2. Download `Credit_Card_Fraud_Detection.ipynb` jupyter notebook from this repo
+3. Download dataset *creditcard.csv* from [here](https://drive.google.com/file/d/1aB4exBKkYppBkfJ-8eByy3pe4k6YC9bu/view?usp=sharing) in same folder where `Credit_Card_Fraud_Detection.ipynb` is kept
+4. Open `Credit_Card_Fraud_Detection.ipynb` notebook and execute till section... [TODO]
+5. Since some models will take longer to train its advisable to execute model training code one by one and save the trained model so that if training process halts in between then models already trained are not lost.
 
+    > Save trained Model...[TODO]
+    ```python
+    import save_model
+
+    model.save_model('file_name')
+
+    ```
+
+    > Load saved Model...[TODO]
+    ```python
+    import load_model
+
+    model = load_model('file_name')
+
+    ```
+6. Predict using trained model [TODO]
+    ```python
+    preds = model.predict()
+    ```
 ---
 
-## References
+## Credits
 
+- Title photo by [Ales Nesetril On Unsplash](https://unsplash.com/photos/ex_p4AaBxbs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+- Data collected and analysed by [Worldline and the Machine Learning Group](http://mlg.ulb.ac.be) 
+- Dataset sourced from [Kaggle](https://www.kaggle.com/)
 ---
 
 ## License
@@ -97,8 +137,8 @@ SOFTWARE.
 
 ## Author Info
 
-- Twitter - [@sssingh](https://twitter.com/jamesqquick)
-- Linkedin - [Sunil S. Singh](https://linkedin.com/sssingh)
+- Twitter - [@sunilssingh6](https://twitter.com/sunilssingh6)
+- Linkedin - [Sunil S. Singh](https://linkedin.com/in/sssingh)
 
 [Back To The Top](#Credit-Card-Fraud-Detection)
 
