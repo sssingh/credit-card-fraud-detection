@@ -78,10 +78,10 @@ arrive at the final-model for our project.
     - `xgboost`
 2. Download `Credit_Card_Fraud_Detection.ipynb` jupyter notebook from this repo
 3. Download dataset *creditcard.csv* from [here](https://drive.google.com/file/d/1aB4exBKkYppBkfJ-8eByy3pe4k6YC9bu/view?usp=sharing) in same folder where `Credit_Card_Fraud_Detection.ipynb` is kept
-4. Open `Credit_Card_Fraud_Detection.ipynb` notebook and execute till section... [TODO]
+4. Open `Credit_Card_Fraud_Detection.ipynb` notebook and execute till section...
 5. Since some models will take longer to train its advisable to execute model training code one by one and save the trained model so that if training process halts in between then models already trained are not lost.
 
-    > Save trained Model...[TODO]
+    > Save trained Model...
     ```python
     import save_model
 
@@ -89,14 +89,14 @@ arrive at the final-model for our project.
 
     ```
 
-    > Load saved Model...[TODO]
+    > Load saved Model...
     ```python
     import load_model
 
     model = load_model('file_name')
 
     ```
-6. Predict using trained model [TODO]
+6. Predict using trained model
     ```python
     preds = model.predict()
     ```
