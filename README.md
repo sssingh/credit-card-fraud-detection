@@ -71,7 +71,7 @@ arrive at the final-model for our project.
 ---
 
 ## How To Use
-1. Ensure below listed packages are installed [TODO]
+1. Ensure below listed packages are installed
     - `sklearn v1.0`
     - `numpy`
     - `pandas`
