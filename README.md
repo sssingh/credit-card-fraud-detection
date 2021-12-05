@@ -12,6 +12,7 @@
 - [Objective](#objective)
 - [Dataset](#dataset)
 - [Solution Approach](#solution-approach)
+- [Evaluation Criteria](#evaluation-criteria)
 - [How To Use](#how-to-use)
 - [License](#license)
 - [Author Info](#author-info)
@@ -27,7 +28,7 @@ explicit permission from the card holder. There are various ways card fraud can 
 information.
 - Credit card information can be stolen using card skimmer installed at ATMs
 
-Card fraud is a big problem for card issuers and banks as it account for substantial chunk of revenue loss. As per a report, fraud
+Card fraud is a big problem for card issuers and banks as it account for substantial chunk of revenue loss. As per <a href="https://www.prnewswire.com/news-releases/payment-card-fraud-losses-reach-27-85-billion-300963232.html"> Annual Fraud Statistics Released by The Nilson Report</a>, fraud
 losses reached up to USD 27.8 billion in 2019 and expect to go up to USD 35.67 billion in next 5 years. 
 
 ---
@@ -70,33 +71,35 @@ arrive at the final-model for our project.
 
 ---
 
+## Evaluation Criteria
+* `roc_auc` will be used as primary metric for model evaluation and performance comparison
+* We'll also monitor the `precision` and `recall` for each of the model we build as they can give useful insights for different use-cases
+---
 ## How To Use
 1. Ensure below listed packages are installed
     - `sklearn v1.0`
     - `numpy`
     - `pandas`
     - `xgboost`
+    - `imblearn`
 2. Download `Credit_Card_Fraud_Detection.ipynb` jupyter notebook from this repo
-3. Download dataset *creditcard.csv* from [here](https://drive.google.com/file/d/1aB4exBKkYppBkfJ-8eByy3pe4k6YC9bu/view?usp=sharing) in same folder where `Credit_Card_Fraud_Detection.ipynb` is kept
-4. Open `Credit_Card_Fraud_Detection.ipynb` notebook and execute till section...
-5. Since some models will take longer to train its advisable to execute model training code one by one and save the trained model so that if training process halts in between then models already trained are not lost.
+3. Download the dataset *creditcard.csv* from [here](https://drive.google.com/file/d/1n_ddBvn2dThcYE2hnrXg3kM153dGQGxo/view?usp=sharing) in same folder where `Credit_Card_Fraud_Detection.ipynb` is kept
+4. Notebook `Credit_Card_Fraud_Detection.ipynb` can be executed from start to finish in one go. However, given the amount of data and Hyperparameter tuning done using Gridsearch the complete notebook takes around **~8 hrs** to run end to end on intel i7 4-cores 32Gb machine with n_job set to -1 (using all 4 cores while training). Hence its advisable to execute model training code one by one and save the trained model so that if training process halts in between then models already trained are not lost.
 
-    > Save trained Model...
-    ```python
-    import save_model
+To save the trained model you can use below code...
+```python
+    import pickle
+    
+    pickle.dump(model, open('model_name.pkl', 'wb'))
 
-    model.save_model('file_name')
+```
 
-    ```
+To load the saved model you can use below code...
+```python
+    model =pickle.load(open('model_name.pkl', 'rb'))
 
-    > Load saved Model...
-    ```python
-    import load_model
-
-    model = load_model('file_name')
-
-    ```
-6. Predict using trained model
+```
+6. Predict using trained/loaded model
     ```python
     preds = model.predict()
     ```
