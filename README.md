@@ -1,7 +1,7 @@
 # Credit Card Fraud Detection
 In this project, we tackle a classic `binary-classification` problem. Our ultimate goal is to build and train machine-learning models to detect fraudulent credit card transactions.
 
-<img src="images/main-project-image.jpg" width="100" height="50" />
+<img src="images/main-project-image.jpg" width="400" height="300" />
 ![](images/main-project-image.jpg)
 
 ## Features
@@ -11,7 +11,8 @@ In this project, we tackle a classic `binary-classification` problem. Our ultima
 ⚡DecisionTree  
 ⚡LinearSVC  
 ⚡RandomForest  
-⚡XGBoost  
+⚡XGBoost
+⚡Python
 ⚡Scikit-Learn  
 
 ## Table of Contents
@@ -51,7 +52,7 @@ To implement proactive monitoring, prevention mechanisms, reduce time-consuming 
 - Dataset has 31 features, 30 independent and one dependent column.
 - Due to confidentiality reasons, 28 out of 30 independent features are transformed to numerical values using `PCA`. The remaining two features, `time` and `amount,` are left intact.  
 - Fraudulent transactions are marked as 1 (Positive class), and genuine transactions are marked as 0 (negative class)
----
+
 
 ## Solution Approach
 - We start with Exploratory Data Analysis to get in-depth data understanding, how predictors are affecting/not affecting the target variable and if given predictors are helpful to us for model building.
@@ -115,10 +116,10 @@ To load the saved model you can use below code...
 
 ## Author Info
 
-- Twitter: [@_sssingh](https://twitter.com/_sssingh)
-- Linkedin: [Sunil S. Singh](https://linkedin.com/in/sssingh)
-- Email: mailto:sunil.singh@datamatrix-ml.com
-- Website: https://datamatrix-ml.com 
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sssingh)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/_sssingh)
+[![website](https://img.shields.io/badge/website-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://datamatrix-ml.com)/)
+
 
 ## Credits
 
