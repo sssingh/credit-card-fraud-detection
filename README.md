@@ -11,8 +11,8 @@ In this project, we tackle a classic `binary-classification` problem. Our ultima
 ⚡DecisionTree  
 ⚡LinearSVC  
 ⚡RandomForest  
-⚡XGBoost
-⚡Python
+⚡XGBoost  
+⚡Python  
 ⚡Scikit-Learn  
 
 ## Table of Contents
@@ -24,7 +24,7 @@ In this project, we tackle a classic `binary-classification` problem. Our ultima
 - [Evaluation Criteria](#evaluation-criteria)
 - [How To Use](#how-to-use)
 - [License](#license)
-- [Author Info](#author-info)
+- [Author Info](#get-in-touch)
 - [Credits](#credits)
 
 
@@ -114,11 +114,11 @@ To load the saved model you can use below code...
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-## Author Info
+## Get in touch
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sssingh)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/_sssingh)
-[![website](https://img.shields.io/badge/website-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://datamatrix-ml.com)/)
+[![website](https://img.shields.io/badge/website-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://datamatrix-ml.com/)
 
 
 ## Credits
