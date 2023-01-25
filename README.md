@@ -1,10 +1,17 @@
 # Credit Card Fraud Detection
+In this project, we tackle a classic `binary-classification` problem. Our ultimate goal is to build and train machine-learning models to detect fraudulent credit card transactions.
 
 ![](images/main-project-image.jpg)
 
-> ### Credit card fraud detection using machine learning techniques.
-
----
+## Features
+⚡Binary Classification  
+⚡Dataset Balancing (RANDOM/SMOTE/ADASYN)  
+⚡LogisticRegression  
+⚡DecisionTree  
+⚡LinearSVC  
+⚡RandomForest  
+⚡XGBoost  
+⚡Scikit-Learn  
 
 ## Table of Contents
 
@@ -16,8 +23,8 @@
 - [How To Use](#how-to-use)
 - [License](#license)
 - [Author Info](#author-info)
+- [Credits](#credits)
 
----
 
 ## Introduction
 
@@ -31,11 +38,10 @@ information.
 Card fraud is a big problem for card issuers and banks as it accounts for a substantial chunk of revenue loss. As per <a href="https://www.prnewswire.com/news-releases/payment-card-fraud-losses-reach-27-85-billion-300963232.html"> Annual Fraud Statistics Released by The Nilson Report</a>, fraud
 losses reached USD 27.8 billion in 2019 and expect to go up to USD 35.67 billion in the next five years. 
 
----
 ## Objective
 To implement proactive monitoring, prevention mechanisms, reduce time-consuming manual reviews and human errors, this project aims to build and train a machine learning model to predict fraudulent credit card transactions.
 
----
+
 ## Dataset
 - Dataset contains credit card transactions done by European cardholders in 2013 for two days
 - There are 284,807 total transactions
@@ -69,12 +75,10 @@ The best model of each type is then selected using the same metrics we use for t
 - Finally, we compare the best model selected using imbalanced data vs. the best model selected using a balanced dataset and
 arrive at the final model for our project.
 
----
-
 ## Evaluation Criteria
 * `roc_auc` will be used as the primary metric for model evaluation and performance comparison
 * We'll also monitor the `precision` and `recall` for each of the models we build as they can give valuable insights for different use-cases
----
+
 ## How To Use
 1. Ensure the below-listed packages are installed
     - `sklearn v1.0`
@@ -103,46 +107,22 @@ To load the saved model you can use below code...
     ```python
     preds = model.predict()
     ```
----
+
+## License
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+## Author Info
+
+- Twitter: [@_sssingh](https://twitter.com/_sssingh)
+- Linkedin: [Sunil S. Singh](https://linkedin.com/in/sssingh)
+- Email: mailto:sunil.singh@datamatrix-ml.com
+- Website: https://datamatrix-ml.com 
 
 ## Credits
 
 - Title photo by [Ales Nesetril On Unsplash](https://unsplash.com/photos/ex_p4AaBxbs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 - Data collected and analyzed by [Worldline and the Machine Learning Group](http://mlg.ulb.ac.be) 
 - Dataset sourced from [Kaggle](https://www.kaggle.com/)
----
-
-## License
-
-MIT License
-
-Copyright (c) [2021] [Sunil S. Singh]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the software, and to permit persons to whom the software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
----
-
-## Author Info
-
-- Twitter - [@_sssingh](https://twitter.com/_sssingh)
-- Linkedin - [Sunil S. Singh](https://linkedin.com/in/sssingh)
 
 [Back To The Top](#Credit-Card-Fraud-Detection)
-
----
