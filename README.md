@@ -1,7 +1,7 @@
 # Credit Card Fraud Detection
 In this project, we tackle a classic `binary-classification` problem. Our ultimate goal is to build and train machine-learning models to detect fraudulent credit card transactions.
 
-<img src="images/main-project-image.jpg" width="400" height="300" />
+<img src="images/main-project-image.jpg" width="600" height="300" />
 ![](images/main-project-image.jpg)
 
 ## Features
