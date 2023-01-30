@@ -19,16 +19,15 @@ In this project, we tackle a classic `binary-classification` problem. Our ultima
 - [Introduction](#introduction) 
 - [Objective](#objective)
 - [Dataset](#dataset)
-- [Solution Approach](#solution-approach)
 - [Evaluation Criteria](#evaluation-criteria)
+- [Solution Approach](#solution-approach)
 - [How To Use](#how-to-use)
 - [License](#license)
-- [Author Info](#get-in-touch)
+- [Get in touch](#get-in-touch)
 - [Credits](#credits)
 
 
 ## Introduction
-
 Credit card fraud is a form of identity fraud/theft. It happens when an unauthorized transaction is made using a credit card without
 explicit permission from the cardholder. There are various ways card fraud can be conducted...
 - Fraudsters can get discarded receipts or credit card statements that include your account number and use that information to rack up fraudulent charges.
@@ -42,7 +41,6 @@ losses reached USD 27.8 billion in 2019 and expect to go up to USD 35.67 billion
 ## Objective
 To implement proactive monitoring, prevention mechanisms, reduce time-consuming manual reviews and human errors, this project aims to build and train a machine learning model to predict fraudulent credit card transactions.
 
-
 ## Dataset
 - Dataset contains credit card transactions done by European cardholders in 2013 for two days
 - There are 284,807 total transactions
@@ -52,6 +50,9 @@ To implement proactive monitoring, prevention mechanisms, reduce time-consuming 
 - Due to confidentiality reasons, 28 out of 30 independent features are transformed to numerical values using `PCA`. The remaining two features, `time` and `amount,` are left intact.  
 - Fraudulent transactions are marked as 1 (Positive class), and genuine transactions are marked as 0 (negative class)
 
+## Evaluation Criteria
+* `roc_auc` will be used as the primary metric for model evaluation and performance comparison
+* We'll also monitor the `precision` and `recall` for each of the models we build as they can give valuable insights for different use-cases
 
 ## Solution Approach
 - We start with Exploratory Data Analysis to get in-depth data understanding, how predictors are affecting/not affecting the target variable and if given predictors are helpful to us for model building.
@@ -75,10 +76,6 @@ The best model of each type is then selected using the same metrics we use for t
 - We then select the best model out of the best models built on the balanced dataset.
 - Finally, we compare the best model selected using imbalanced data vs. the best model selected using a balanced dataset and
 arrive at the final model for our project.
-
-## Evaluation Criteria
-* `roc_auc` will be used as the primary metric for model evaluation and performance comparison
-* We'll also monitor the `precision` and `recall` for each of the models we build as they can give valuable insights for different use-cases
 
 ## How To Use
 1. Ensure the below-listed packages are installed
@@ -110,18 +107,15 @@ To load the saved model you can use below code...
     ```
 
 ## License
-
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Get in touch
-
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sssingh)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/_sssingh)
 [![website](https://img.shields.io/badge/website-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://datamatrix-ml.com/)
 
 
 ## Credits
-
 - Title photo by [Ales Nesetril On Unsplash](https://unsplash.com/photos/ex_p4AaBxbs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 - Data collected and analyzed by [Worldline and the Machine Learning Group](http://mlg.ulb.ac.be) 
 - Dataset sourced from [Kaggle](https://www.kaggle.com/)
