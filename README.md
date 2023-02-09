@@ -88,7 +88,7 @@ arrive at the final model for our project.
 3. Download the dataset *creditcard.csv* from [here](https://drive.google.com/file/d/1n_ddBvn2dThcYE2hnrXg3kM153dGQGxo/view?usp=sharing) in same folder where `Credit_Card_Fraud_Detection.ipynb` is kept
 4. Notebook `Credit_Card_Fraud_Detection.ipynb` can be executed from start to finish in one go. However, given the amount of data and Hyperparameter tuning done using Gridsearch, the complete notebook takes around **~8 hrs** to run end to end on intel i7 4-cores 32Gb machine with n_job set to -1 (using all four cores while training). Hence, it is advisable to execute model training code one by one and save the trained model so that if the training process halts in between, models already trained are not lost.
 
-To save the trained model, you can use the below code...
+* To save the trained model, you can use the below code...
 ```python
     import pickle
     
@@ -96,12 +96,12 @@ To save the trained model, you can use the below code...
 
 ```
 
-5. To load the saved model you can use below code...
+* To load the saved model you can use below code...
 ```python
     model =pickle.load(open('model_name.pkl', 'rb'))
 
 ```
-6. Predict using trained/loaded model
+* Predict using trained/loaded model
     ```python
     preds = model.predict()
     ```
