@@ -93,18 +93,17 @@ arrive at the final model for our project.
     import pickle
     
     pickle.dump(model, open('model_name.pkl', 'wb'))
-
 ```
 
 * To load the saved model you can use below code...
 ```python
     model =pickle.load(open('model_name.pkl', 'rb'))
-
 ```
+
 * Predict using trained/loaded model
-    ```python
+```python
     preds = model.predict()
-    ```
+```
 
 ## License
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
